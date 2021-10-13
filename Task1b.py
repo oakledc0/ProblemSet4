@@ -1,5 +1,5 @@
-# Task 1a
-# Name: Task1a.py
+# Task 1b
+# Name: Task1b.py
 # Description: create initial buffer script
    
 # Import system modules
