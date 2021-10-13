@@ -11,13 +11,10 @@ arcpy.env.overwriteOutput = True
 
 #loop through different buffer distances
 for buffDist in range(100, 600, 100):
-    
-#set "buffDist" as string
-    buff = str(buffDist)
-    
+    buff = "{} meters".format(buffDist)
 # Set local variables
     in_features_streams = "streams.shp"
-    out_features_StrmBuff = "E:/Fall2021/GIS/ProblemSets/PS4/ENV859_PS4/Scratch/buff"+buff+"m.shp"
+    out_features_StrmBuff = "E:/Fall2021/GIS/ProblemSets/PS4/ENV859_PS4/Scratch/buff"+str(buffDist)+"m.shp"
 
 #run Buffer_analysis
     arcpy.Buffer_analysis(in_features_streams,out_features_StrmBuff,buff,'','','ALL')

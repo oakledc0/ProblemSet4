@@ -1,6 +1,9 @@
 # Task 1d
 # Name: Task1d.py
 # Description: create initial buffer script
+
+#PARAMETERS FORMATTED IN ARCGIS PRO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#See E:/Fall2021/GIS/ProblemSets/PS4/ENV859_PS4/PS4.tbx for details
    
 # Import system modules
 import arcpy
@@ -11,6 +14,7 @@ arcpy.env.overwriteOutput = True
 
 #allow user specified buffer distance
 buffDist = arcpy.GetParameterAsText(0)
+buff = "{} meters".format(buffDist)
 
 # Set local variables
 in_features_streams = "streams.shp"
