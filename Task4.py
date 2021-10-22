@@ -1,7 +1,7 @@
 ##############################################################################
 # Task 4
 # Name: Task4.py
-# Description: 
+# Description: Output dataset information
 # Author: Cal Oakley
 # Date: Fall 2021
 ##############################################################################
